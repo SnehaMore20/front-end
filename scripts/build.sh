@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+##---- !/usr/bin/env bash
 
 set -ev
 
@@ -23,6 +23,6 @@ fi
 CODE_DIR=$(cd $SCRIPT_DIR/..; pwd)
 echo $CODE_DIR
 
-REPO=${GROUP}/$(basename front-end);
+REPO=${GROUP}/$(basename argo-hack);
 
 $DOCKER_CMD build -t ${REPO}:${COMMIT} .
