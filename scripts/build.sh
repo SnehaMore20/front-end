@@ -25,4 +25,5 @@ echo $CODE_DIR
 
 REPO=${GROUP}/$(basename argo-hack);
 
-$DOCKER_CMD build -t ${REPO}:${COMMIT} .
+#$DOCKER_CMD build -t ${REPO}:${COMMIT} .
+docker build -t ${REPO}:${COMMIT} .
